@@ -1,6 +1,6 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
-import { FadeLoader } from "react-spinners";
+// import { FadeLoader } from "react-spinners";
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
@@ -65,7 +65,8 @@ class PageLoader extends Component {
     return (
       <div css={css(Loader)}>
         <img src={"../../static/images/logo.png"} css={css(logo)} />
-        <FadeLoader color={loaderColor} sizeUnit={"px"} size={30} />
+        {/* <FadeLoader color={loaderColor} sizeUnit={"px"} size={30} /> */}
+        <h1>Loading....</h1>
       </div>
     );
   }
